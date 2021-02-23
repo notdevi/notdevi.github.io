@@ -323,3 +323,62 @@ footer p{
     color: #2b2b2b;
     font-size: 20px;
 }
+
+.slider{
+    max-width: 700px;
+    border: 10px solid white;
+    margin: 40px auto;
+    position: relative;
+}
+.slider .slider-items .item img{
+    max-width: 100%;
+    display: block;
+    transition: ease-in 0.5s;
+}
+.slider .slider-items .item{
+    display: none;
+    position: relative;
+}
+.slider .slider-items .item .caption{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.2);
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.slider .slider-items .item.active{
+    display: block;
+}
+.slider .left-slide, 
+.slider .right-slide{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    color: black;
+    font-size: 20px;
+    top: 50%;
+    margin-top: -20px;
+    text-align: center;
+    line-height: 40px;
+    transition: all ease 0.5s;
+    cursor: context-menu;
+}
+.slider .left-slide:hover,.slider .right-slide:hover{
+    box-shadow: 0px 0px 10px black;
+    background-color: darksalmon;
+}
+.slider .left-slide{
+    left: 30px;
+}
+.slider .right-slide{
+    right: 30px;
+}
